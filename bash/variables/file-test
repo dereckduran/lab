@@ -1,0 +1,3 @@
+# shows the error of not wrapping variables in double quotes
+file="my important file.txt"
+rm $file
