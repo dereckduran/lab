@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "====Sytestem Information===="
+echo "Host: $(hostnamectl hostname)"
+echo "Date: $(date)"
+echo "Kernel: $(uname -r)"
+
