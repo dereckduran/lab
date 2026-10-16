@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "Hello your directory was copied in!"
