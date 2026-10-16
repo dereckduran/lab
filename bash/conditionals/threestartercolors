@@ -1,0 +1,18 @@
+#!/bin/bash
+
+case "${1^}" in
+	Charizard)
+		echo "Charizard is red"
+		;;
+	Blastoise)
+		echo "Blastoise is blue"
+		;;
+	Venusaur)
+		echo "Venusaur is green"
+		;;
+	*)
+		echo "Only the final evolutions of the Gen 1 pokemon are supported"
+		echo "Usage: $0 {charizard|blastoise|venusaur}"
+		exit 1
+		;;
+esac

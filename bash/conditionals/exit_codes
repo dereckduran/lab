@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ ! -f $1 ]]; then
+	echo "File not found: $1"
+	exit 1
+fi
+
+echo "Processing $1..."
+exit 0
