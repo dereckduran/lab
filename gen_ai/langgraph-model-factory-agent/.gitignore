@@ -1,0 +1,3 @@
+.factory/
+.env
+__pycache__/*
