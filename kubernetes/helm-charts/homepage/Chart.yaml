@@ -1,0 +1,12 @@
+apiVersion: v2
+name: homepage
+description: Chart for Homepage
+icon: https://github.com/gethomepage/homepage/blob/main/public/mstile-150x150.png
+type: application
+version: 0.1.0
+appVersion: "v2.7.0"
+sources:
+  - https://github.com/gethomepage/homepage/
+  - https://github.com/dereckduran/lab
+maintainers:
+  - name: dereckduran

@@ -1,0 +1,55 @@
+replicaCount: 1
+
+image:
+  repository: ghcr.io/gethomepage/homepage
+  # This sets the pull policy for images.
+  pullPolicy: IfNotPresent
+  # App version already set in Chart.yaml
+  # tag: "v2.7.0"
+
+serviceAccount:
+  # Specifies whether a service account should be created.
+  create: true
+  # If not set and create is true, a name is generated using the fullname template.
+  name: ""
+
+service:
+  # This sets the service type more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types
+  type: ClusterIP
+  # This sets the ports more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/#field-spec-ports
+  port: 80
+
+allowedHosts: "localhost:3000"
+
+ingress:
+  enabled: false
+
+resources: {}
+
+config:
+  settings: |
+    title: Homepage
+  docker: ""
+  customCss: ""
+  customJs: ""
+  bookmarks: |
+    - Developer:
+        - Github:
+            - abbr: GH
+              href: https://github.com/
+  services: |
+    - My First Group:
+        - My Service:
+            href: http://localhost/
+  widgets: |
+    - resources:
+        backend: resources
+        expanded: true
+        cpu: true
+        memory: true
+    - search:
+        provider: duckduckgo
+        target: _blank
+
+
+
